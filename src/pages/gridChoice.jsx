@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-function Buttons() {
+function GridChoice() {
   const router = useRouter()
   const styles = {
     button: {
@@ -7,7 +7,7 @@ function Buttons() {
       color:"white",
       fontSize:"55px",
       width:"70vw",
-      height:"20vh",
+      height:"23vh",
       alignSelf:"center",
       marginLeft:"15vw",
       marginTop:"4vh",
@@ -15,19 +15,20 @@ function Buttons() {
       boxShadow:"5px 5px 10px 2px rgba(0,0,0,.8)"
     }
   } 
-  function butto(mode) {
-    //const router = useRouter()
-    router.push("/grid")
-    let gamemode = mode
-    return gamemode
+  function butto(size) {
+    router.push({
+      pathname: `/play/`,
+      query: {...router.query, size}
+    })
+    return size
   }
   const dry =(styles.button)
   return (
     <div>
-      <button style={dry} onClick={() => butto("easy")}>Easy</button>
-      <button style={dry} onClick={() => butto("normal")}>Normal</button>
-      <button style={dry} onClick={() => butto("hard")}>Hard</button>
+      <button style={dry} onClick={() => butto("4")}>4x4</button>
+      <button style={dry} onClick={() => butto("5")}>5x5</button>
+      <button style={dry} onClick={() => butto("6")}>6x6</button>
     </div>
   )
 }
-export default Buttons
+export default GridChoice

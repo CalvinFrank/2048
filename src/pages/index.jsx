@@ -1,15 +1,14 @@
-import Buttons from "../components/Buttons";
+import Link from "next/link"
 export default function Home() {
   const styles = {
-    header: {
-      marginLeft:"1vh",
-      marginTop:"1vh"
-    },
+
   }
+  const dry =(styles.button)
   return (
     <div>
-      <title>2048</title>
-      <Buttons/>
+      <h1>Welcome to 2048!</h1>
+      <p>To get set up to play click this:</p>
+      <Link href="/modeChoice">setup</Link>
     </div>
   )
 }
