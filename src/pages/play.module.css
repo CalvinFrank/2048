@@ -3,11 +3,12 @@
   height: 80vw;
   width: 80vw;
   border-radius: 10px;
-  max-height: calc(100vh - 32px);
-  max-width: calc(100vh - 32px);
+  max-height: calc(100vh - 34px);
+  max-width: calc(100vh - 34px);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 2px;
 }
 .cells {
   margin-bottom: 10px;
