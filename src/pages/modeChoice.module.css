@@ -1,0 +1,12 @@
+.button {
+  background-color:rgb(255, 217, 0);
+  color:white;
+  font-size:55px;
+  width:70vw;
+  height:23vh;
+  align-self:center;
+  margin-left:15vw;
+  margin-top:4vh;
+  margin-bottom:5vh;
+  box-shadow:5px 5px 10px 2px rgba(0,0,0,.8);
+} 

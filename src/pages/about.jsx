@@ -1,10 +1,4 @@
 export default function About() {
-  const styles = {
-    header: {
-      marginLeft:"1vh",
-      marginTop:"1vh"
-    },
-  }
   return (
     <>
       <h2>How To Play</h2> 
