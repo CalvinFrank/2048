@@ -8,13 +8,42 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 2px;
+  /* padding: 2px; */
+  /* margin: 0px 10vw; */
 }
 .cells {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin:10px;
   background-color: rgba(238, 228, 218, 0.35);
   border-radius: 10px;
+  text-indent: -60000px;
+}
+.rCell {
+  display: flex;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #ffea00;
+  color: white;
+  font-size: clamp(2rem,4rem,7rem);
+  align-items: center;
+  /* testing area */
+  /* font-size: 5.6rem; Kindle Fire */
+  /* font-size: 2.5rem; iPhone SE */
+  /* font-size: 2.2rem; iPhone 12 Pro */
+  /* font-size: 2.25rem; Pixel 5 */
+  /* font-size: 2.15rem; Samsung Galaxy S8+ */
+  /* font-size: 2.5rem; Samsung Galaxy S20 Ultra */
+  /* font-size: 5.75rem; iPad Air */
+  /* font-size: 4.5rem; iPad Mini */
+  /* font-size: 5.3rem; Surface Pro 7 */
+  /* font-size: 3.1rem; Surface Duo */
+  /* font-size: 2rem; Galaxy Fold */
+  /* font-size: 3.1rem; Samsung Galaxy A51/71 */
+  /* font-size: 4.6rem; Nest Hub */
+  /* font-size: 6rem; Nest Hub Max */
+  /* font-size: 5.2rem; iPad */
+  /* font-size: 7rem; iPad Pro */
+}
+.text {
+  display: flex;
+  align-self: center;
 }

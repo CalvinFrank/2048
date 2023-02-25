@@ -6,13 +6,11 @@ export default function Play() {
   const router = useRouter();
   const size = router.query.size;
   const mode = router.query.mode
-
   const cellsStyles = {
     width:`calc(100% * (1/${size}) - 20px)`,
     height:`calc(100% * (1/${size}) - 20px)`,
   }
   useEffect(() => {
-    console.log("In the useEffect(): size: " + size);
     if(size != 4 && size !=5 && size !=6) {
       router.push({pathname:"/modeChoice"})
     }
@@ -21,9 +19,15 @@ export default function Play() {
     }
   }, [size]);
 
+  const randomCell = Math.round(Math.random() * size * size) -1
   const cells = []
   for(let i = 0; i<size*size; i++) {
-    cells.push(<div className={styles.cells} style={cellsStyles} key={i}></div>)
+    if (i === randomCell) {
+      
+      cells.push(<div className={styles.rCell} style={cellsStyles} key={randomCell}><p className={styles.text}>2</p></div>)
+    } else {
+      cells.push(<div className={styles.cells} style={cellsStyles} key={i}><p className={styles.text}>2</p></div>)
+    }
   }
   return (
     <div>
