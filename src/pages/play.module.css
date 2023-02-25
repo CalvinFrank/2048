@@ -18,13 +18,13 @@
   text-indent: -60000px;
 }
 .rCell {
-  display: flex;
+  display: grid;
+  place-items: center;
   border-radius: 10px;
   margin: 10px;
   background-color: #ffea00;
   color: white;
   font-size: clamp(2rem,4rem,7rem);
-  align-items: center;
   /* testing area */
   /* font-size: 5.6rem; Kindle Fire */
   /* font-size: 2.5rem; iPhone SE */
@@ -44,6 +44,9 @@
   /* font-size: 7rem; iPad Pro */
 }
 .text {
+  margin: 0;
+}
+.center {
   display: flex;
-  align-self: center;
+  justify-content: center;
 }

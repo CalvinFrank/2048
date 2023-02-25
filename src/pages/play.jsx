@@ -21,7 +21,7 @@ export default function Play() {
 
   const randomCell = Math.round(Math.random() * size * size) -1
   const cells = []
-  for(let i = 0; i<size*size; i++) {
+  for(let i = 0; i < size * size; i++) {
     if (i === randomCell) {
       
       cells.push(<div className={styles.rCell} style={cellsStyles} key={randomCell}><p className={styles.text}>2</p></div>)
@@ -30,7 +30,7 @@ export default function Play() {
     }
   }
   return (
-    <div>
+    <div className={styles.center}>
       <div className={styles.board}>
         {...cells}
       </div>
